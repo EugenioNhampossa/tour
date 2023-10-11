@@ -23,8 +23,8 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Group screenOptions={{ headerShown: false }}>
           <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Info" component={Info} />
+          <Stack.Screen name="Search" component={Search} />
           <Stack.Screen name="Register" component={Register} />
           <Stack.Screen name="Login" component={Login} />
         </Stack.Group>

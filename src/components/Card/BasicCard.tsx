@@ -2,9 +2,13 @@ import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import { Rating } from 'react-native-ratings'
 
-export const BasicCard = () => {
+export const BasicCard = ({ navigation }) => {
   return (
-    <TouchableOpacity activeOpacity={0.8} className="mr-4">
+    <TouchableOpacity
+      activeOpacity={0.8}
+      className="mr-4"
+      onPress={() => navigation.navigate('Info')}
+    >
       <View className="flex-col w-[70vw]">
         <View className="h-44">
           <Image
